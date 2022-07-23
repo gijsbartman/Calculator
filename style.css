@@ -20,17 +20,42 @@ body {
     justify-content: center;
 }
 
-.header {
+/* HEADER */
+
+header {
     font-size: 30px;
     color: #333;
 }
 
-main .calculator-container {
+/* MAIN */
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary-dark);
     border-radius: 10px;
     width: 500px;
     height: 700px;
+    text-align: center;
 }
+
+.screen {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    background-color: var(--secondary-light);
+    height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: dense;
+}
+
+/* FOOTER */
 
 .footer {
     position: absolute;
