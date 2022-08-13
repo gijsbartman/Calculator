@@ -2,10 +2,18 @@
 
 :root {
     --primary-dark: #5D5C61;
-    --primary-light: #938E93;
-    --secondary-dark: #557A95;
-    --secondary-light: #7395AE;
+    --primary-light: #F8F7F3;
+    --secondary-dark: #373F51;
+    --secondary-light: #58A4B0;
     --tertiary: #B0A295;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -14,16 +22,34 @@ html {
 
 body {
     background-color: var(--primary-light);
+    color: var(--primary-dark);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* footer support */
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+  
+.calculator-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
 /* HEADER */
 
-header {
-    font-size: 30px;
+.title {
+    font-size: 50px;
     color: #333;
 }
 
@@ -31,6 +57,7 @@ header {
 
 .calculator-container {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     background-color: var(--primary-dark);
     border-radius: 10px;
@@ -41,13 +68,23 @@ header {
 
 .screen {
     display: flex;
-    align-items: flex-end;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--secondary-light);
     height: 100px;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
+}
+
+.preview {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.preview.main {
+    font-size: 42px;
 }
 
 .grid {
@@ -58,10 +95,10 @@ header {
 /* FOOTER */
 
 .footer {
-    position: absolute;
     bottom: 0;
     left: 0;
     text-align: center;
     width: 100%;
     color: #333;
+    padding-top: 20px;
 }
