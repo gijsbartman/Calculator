@@ -13,10 +13,33 @@
         <div class="calculator-container">
             <div id="screen" class="screen">
                 <div class="preview">-</div>
-                <div class="preview main">0</div>
+                <div class="input">0</div>
             </div>
                 
-            <div id="grid" class="grid"></div>
+            <div id="grid" class="grid">
+                <img src="Images/BartmannerLogo-02.png">
+                <button class="btn span-2" id="clearBtn">Clear</button>
+                <button class="btn" onclick="this.blur()" data-operator>÷</button>
+
+                <button class="btn" onclick="this.blur()" data-number>7</button>
+                <button class="btn" onclick="this.blur()" data-number>8</button>
+                <button class="btn" onclick="this.blur()" data-number>9</button>
+                <button class="btn" onclick="this.blur()" data-operator>×</button>
+
+                <button class="btn" onclick="this.blur()" data-number>4</button>
+                <button class="btn" onclick="this.blur()" data-number>5</button>
+                <button class="btn" onclick="this.blur()" data-number>6</button>
+                <button class="btn" onclick="this.blur()" data-operator>−</button>
+
+                <button class="btn" onclick="this.blur()" data-number>1</button>
+                <button class="btn" onclick="this.blur()" data-number>2</button>
+                <button class="btn" onclick="this.blur()" data-number>3</button>
+                <button class="btn" onclick="this.blur()" data-operator>+</button>
+
+                <button class="btn span-2" onclick="this.blur()" data-number>0</button>
+                <button class="btn" onclick="this.blur()" data-operator>.</button>
+                <button class="btn" onclick="this.blur()" data-operator>=</button>
+            </div>
         </div>
     </main>
     <footer class="footer">
