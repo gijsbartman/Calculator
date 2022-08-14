@@ -132,7 +132,12 @@ body {
   
     .calculator-container {
         width: 375px;
-        height: 500px;
+        height: 575px;
+    }
+
+    .grid {
+        grid-gap: 15px;
+        margin: 20px;
     }
 
 }
